@@ -157,39 +157,39 @@ var simple = {
         "stops": [[10, 0.5], [20, 15]]
       }
     }
-  }, {
-      "id": "country-boundary",
-      "source": "osm",
-      "source-layer": "places",
-      "type": "line",
-      "filter": ["==", "admin_level", "2"],
-      "max-zoom": 4,
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "@building",
-      "line-width": {
-        "base": 2,
-        "stops": [[1, 0.5], [7, 3]]
-        }
-      }
-    }, {
-      "id": "state-boundary",
-      "source": "osm",
-      "source-layer": "places",
-      "type": "fill",
-      "filter": ["==", "admin_level", "4"],
-      "max-zoom": 10,
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "fill-color": "@land",
-        "fill-outline-color": "#cacecc"
-      }
+//   }, {
+//       "id": "country-boundary",
+//       "source": "osm",
+//       "source-layer": "places",
+//       "type": "line",
+//       "filter": ["==", "admin_level", "2"],
+//       "max-zoom": 4,
+//       "layout": {
+//         "line-cap": "round",
+//         "line-join": "round"
+//       },
+//       "paint": {
+//         "line-color": "@building",
+//       "line-width": {
+//         "base": 2,
+//         "stops": [[1, 0.5], [7, 3]]
+//         }
+//       }
+//     }, {
+//       "id": "state-boundary",
+//       "source": "osm",
+//       "source-layer": "places",
+//       "type": "fill",
+//       "filter": ["==", "admin_level", "4"],
+//       "max-zoom": 10,
+//       "layout": {
+//         "line-cap": "round",
+//         "line-join": "round"
+//       },
+//       "paint": {
+//         "fill-color": "@land",
+//         "fill-outline-color": "#cacecc"
+//       }
     }, {
     "id": "subways",
     "source": "osm",
