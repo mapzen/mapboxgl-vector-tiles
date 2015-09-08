@@ -116,7 +116,7 @@ var simple = {
     "type": "fill",
     "source": "osm",
     "source-layer": "landuse",
-    "min-zoom": 6,
+    "minzoom": 6,
     "filter": ["in", "kind", "park", "forest", "garden", "grass", "farm", "meadow", "playground", "golf_course", "nature_reserve", "wetland", "wood", "cemetery"],
     "paint": {
       "fill-color": "@park"
@@ -126,7 +126,7 @@ var simple = {
     "source": "osm",
     "source-layer": "water",
     "type": "line",
-    "min-zoom": 6,
+    "minzoom": 6,
     "filter": ["all", ["==", "$type", "LineString"], ["==", "kind", "river"]],
     "layout": {
         "line-cap": "round",
@@ -144,7 +144,7 @@ var simple = {
     "source": "osm",
     "source-layer": "water",
     "type": "line",
-    "min-zoom": 11,
+    "minzoom": 11,
     "filter": ["all", ["==", "$type", "LineString"], ["==", "kind", "stream", "canal"]],
     "layout": {
         "line-cap": "round",
@@ -163,7 +163,7 @@ var simple = {
       "source-layer": "places",
       "type": "line",
       "filter": ["==", "admin_level", "2"],
-      "max-zoom": 4,
+      "maxzoom": 4,
       "layout": {
         "line-cap": "round",
         "line-join": "round"
@@ -181,7 +181,7 @@ var simple = {
       "source-layer": "places",
       "type": "fill",
       "filter": ["==", "admin_level", "4"],
-      "max-zoom": 10,
+      "maxzoom": 10,
       "layout": {
         "line-cap": "round",
         "line-join": "round"
@@ -279,7 +279,7 @@ var simple = {
       "line-join": "round",
       "line-cap": "round"
     },
-    "min-zoom": 12,
+    "minzoom": 12,
     "paint": {
       "line-color": "@path",
       "line-width": "@path-width",
@@ -290,8 +290,8 @@ var simple = {
     "source": "osm",
     "source-layer": "places",
     "type": "symbol",
-    "min-zoom": 2,
-    "max-zoom": 6,
+    "minzoom": 2,
+    "maxzoom": 6,
     "filter": ["==", "kind", "ocean"],
     "layout": {
         "text-field": "{name}",
@@ -312,7 +312,7 @@ var simple = {
       "source": "osm",
       "source-layer": "places",
       "filter": ["all", ["==", "$type", "Point"], ["==", "kind", "neighbourhood", "hamlet", "suburb"]],
-      "min-zoom": 12,
+      "minzoom": 12,
       "type": "symbol",
       "layout": {
         "text-field": "{name}",
@@ -332,8 +332,8 @@ var simple = {
       "source": "osm",
       "source-layer": "places",
       "filter": ["all", ["==", "$type", "Point"], ["==", "kind", "city", "county", "district"]],
-      "min-zoom": 10,
-      "max-zoom": 14,
+      "minzoom": 10,
+      "maxzoom": 14,
       "type": "symbol",
       "layout": {
         "text-field": "{name}",
@@ -354,8 +354,8 @@ var simple = {
       "source": "osm",
       "source-layer": "places",
       "filter": ["all", ["==", "$type", "Point"], ["==", "kind", "state"]],
-      "min-zoom": 6,
-      "max-zoom": 12,
+      "minzoom": 6,
+      "maxzoom": 12,
       "type": "symbol",
       "layout": {
         "text-field": "{name}",
@@ -375,7 +375,7 @@ var simple = {
       "source": "osm",
       "source-layer": "places",
       "filter": ["all", ["==", "$type", "Point"], ["==", "kind", "country"]],
-      "max-zoom": 7,
+      "maxzoom": 7,
       "type": "symbol",
       "layout": {
         "text-field": "{name}",
